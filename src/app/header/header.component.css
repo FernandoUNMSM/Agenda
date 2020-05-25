@@ -1,0 +1,33 @@
+.menu-container {
+    height: 100vh;
+    width: 100px;
+    /* position: fixed; */
+    background-color: var(--colorPrincipal);
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.menu-item {
+    /* display: inline-block; */
+    list-style: none;
+    text-align: center;
+    /* margin: 5px 50px; */                   
+}
+.menu-item a {
+    text-decoration: none;
+    font-family: 'Poppins', serif;
+    color: white;
+    font-size: 4em;
+    transition: .2s;
+    /* width: 100%; */
+}
+.menu-item a:hover, .menu-item a.on {
+    /* opacity: .8; */
+    color: #ccc;
+}

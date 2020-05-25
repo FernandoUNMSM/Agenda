@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', serif;
+}
+:root {
+    /* --colorPrincipal: rgb(48, 85, 144); */
+    --colorPrincipal: rgb(248, 156, 35);
+}
+::selection {
+    background-color: var(--colorPrincipal);
+}
+app-root {
+    display: flex;
+    flex-direction: row;
+}
+
+.all {
+    width: 100%;
+    margin-left: 100px;
+    height: 100vh;
+}
+
+.all2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    z-index: 100;
+}

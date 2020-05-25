@@ -1,0 +1,65 @@
+<section class="data">
+	<div class="fechaIngreso">
+		<div class="fecha">
+			<input type="date" #datepicker>
+		</div>
+		<div class="ingreso">
+			<input type="text" [(ngModel)]="evento">
+			<button (click)="getDate()" >Agregar</button>
+		</div>
+	</div>
+		
+	<div class="calendario">
+		<table>
+			<thead>
+				<tr>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+					<th>Sabado</th>
+					<th>Domingo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{evento}}</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

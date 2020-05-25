@@ -1,0 +1,47 @@
+<!-- <div class="menu-container">
+    <ul class="menu">
+        <li class="menu-item">
+            <a [routerLinkActive]="['']" [routerLink]="['/login']">Login</a>
+        </li>
+        <li class="menu-item">
+            <a [routerLinkActive]="['']" [routerLink]="['/register']">Register</a>
+        </li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet> -->
+
+
+
+<div class="formulario-container">
+    <div class="login formData" #login>
+        <h1>Iniciar Sesión</h1>
+        <form action="" method="POST">
+            <label for="usuario"><fa-icon [icon]="faUser"></fa-icon>Usuario</label>
+            <input type="text" name="usuario" id="usuario" autocomplete="off" required="required">
+            <label for="contraseña"><fa-icon [icon]="faLock"></fa-icon>Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+            <input type="submit" value="Login">
+        </form>
+        <a href="">¿Olvidaste tu contraseña?</a><br>
+        <a (click)="registerOn()">¿No tienes una cuenta?, Create una</a>
+    </div>
+    <div class="register formData" #register>
+        <h1>Registrate</h1>
+        <form action="" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" autocomplete="off" required="required">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" autocomplete="off" required="required">
+            <label for="usuario2">Nombre de Usuario</label>
+            <input type="text" name="usuario2" id="usuario2" autocomplete="off" required="required">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" autocomplete="off" required="required">
+            <label for="contraseña2">Contraseña</label>
+            <input type="password" name="contraseña2" id="contraseña2">
+            <label for="contraseña3">Repetir contraseña</label>
+            <input type="password" name="contraseña3" id="contraseña3">
+            <input type="submit" value="Enviar" (click)="loginOn()">
+        </form>
+    </div>
+</div>
